@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view class="container">
+  <scroll-view class="scroll-view_H" scroll-x="true">
+    <view wx:for="{{tablist}}" class="scroll-view-item_H" bindtap="switch">{{item.name}}</view>
+  </scroll-view>
+  <view class="list_content" wx:for="{{allDate}}">
+    <view class="avator"><image src="{{item.user.avatar}}"></image></view>
+     <view class="content">
+      <p class="tit">{{item.user.username}}</p>
+      <p class="name">{{item.title}}</p>
+      <p class="con_tit">{{item.content}}</p>
+      <view class="thumbnail">
+        <image wx:for="{{item.pic_url}}" wx:for-item="pic" src="{{pic}}"></image>
+      </view>
+     </view>
+  </view>
+  
+</view>

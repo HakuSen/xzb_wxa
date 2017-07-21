@@ -1,0 +1,77 @@
+/**index.wxss**/
+@import "/utils/font.wxss";
+
+navigator{
+  float: left;
+  margin: 0 2px;
+  font-size: 14px;
+}
+.container{
+  background-color: #eee;
+}
+.scroll-view_H{
+  height:80rpx;
+  white-space: nowrap; display: flex;
+  background-color: #fff;
+  font-size: 14px;
+  color:#999;
+  padding:1rpx 0;
+  border-bottom: 1rpx solid #999;
+}
+.scroll-view-item_H {
+  height: 50rpx;
+  width: 150rpx;
+  display: inline-block;
+  text-align: center;
+  line-height: 80rpx;
+}
+.active{
+  color:#1f95d0;
+  border-bottom: 1rpx solid #1f95d0;
+}
+.list_content{
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  padding:30rpx;
+}
+.list_content .avator image{
+  display:block;
+  width: 36px;
+  height:36px;
+  margin-right:5px;
+}
+.list_content .content{
+  font-size:14px;
+  color:#999;
+  display:flex;
+  flex-direction:         column;
+}
+.list_content .content p{
+  margin-bottom:10rpx;
+}
+.content .tit{
+  font-family: 'Indie Flower';
+}
+.content .name{
+  color:#333;
+  font-weight: bold;
+}
+.content .con_tit{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 1.5;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+.thumbnail{
+  display: flex;
+  flex-direction: row;
+  margin-top:10px;
+}
+.thumbnail image{
+  width: 90px;
+  height:90px;
+  margin-right: 10px;
+}
